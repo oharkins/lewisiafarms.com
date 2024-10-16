@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="home-page">
+    <div class="hero">
+        <div class="container">
+            <h2>Welcome to Lewisia Farms</h2>
+            <p>Fresh, Local, Antibiotic-Free</p>
+            <a href="/products" class="button primary">Shop Now</a>
+        </div>
+    </div>
+
+    <section class="welcome">
+        {{ .Content }}
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <!-- You can add a custom shortcode or partial here to display featured products -->
+    </section>
+
+    <section class="about-preview">
+        <h2>About Lewisia Farms</h2>
+        <p>Discover our commitment to sustainable farming and fresh, local produce.</p>
+        <a href="{{ "/about/" | relURL }}" class="button">Learn More</a>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to taste the difference?</h2>
+        <a href="{{ "/products/" | relURL }}" class="button primary">Shop Now</a>
+        <a href="{{ "/contact/" | relURL }}" class="button secondary">Contact Us</a>
+    </section>
+</div>
+{{ end }}

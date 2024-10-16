@@ -1,0 +1,29 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'en-us'
+title = 'Lewisia Farms'
+theme = ''  # Leave this empty if you're not using a theme
+
+[params]
+  description = "Fresh, Local, Antibiotic-Free produce from the heart of the Bitterroot Valley"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "products"
+    name = "Products"
+    url = "/products/"
+    weight = 3
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
