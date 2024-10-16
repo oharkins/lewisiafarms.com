@@ -2,16 +2,16 @@
     <div class="container">
         <div class="header-content">
             <div class="logo">
-                <a href="/">
+                <a href="{{ .Site.Home.RelPermalink }}">
                     <h1>Lewisia Farms</h1>
                 </a>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                    <li><a class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
                 </ul>
             </nav>
         </div>
