@@ -1,7 +1,7 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Lewisia Farms'
-theme = ''  # Leave this empty if you're not using a theme
+theme = ''
 
 [params]
   description = "Fresh, Local, Antibiotic-Free produce from the heart of the Bitterroot Valley"
@@ -12,7 +12,7 @@ theme = ''  # Leave this empty if you're not using a theme
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "About"
+    name = "About Us"
     url = "/about/"
     weight = 2
   [[menu.main]]
