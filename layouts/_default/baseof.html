@@ -7,13 +7,10 @@
     <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
 </head>
 <body>
-<header>
-    {{ partial "header.html" . }}
-</header>
+{{ partial "header.html" . }}
 
-<nav>
-    {{ partial "nav.html" . }}
-</nav>
+{{ partial "nav.html" . }}
+
 
 <main>
     {{ block "main" . }}{{ end }}
