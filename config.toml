@@ -23,3 +23,12 @@ theme = ''
     name = "Contact"
     url = "/contact/"
     weight = 4
+
+[deployment]
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "production"
+# Amazon Web Services S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+URL = "s3://lewisiafarms.com?region=us-west-2"
